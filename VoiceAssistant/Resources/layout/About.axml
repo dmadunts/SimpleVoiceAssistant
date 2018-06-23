@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Voice Assistant"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Версия 1.0 от 17.06.2018"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_below="@+id/header"
+        android:text="Данная программа представляет собой голосовой ассистент, выполняющий общие команды посредством голосовых запросов. Спросите &quot;Что ты умеешь?&quot; для вызова списка команд."
+        android:gravity="fill_horizontal"
+        android:padding="15dp"
+        android:textSize="14dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:text="Данная программа была разработана студентом Ташкентского Университета Информационных Технологий, группы 516-14 АВТ, в учебных целях и не используется в коммерции. "
+        android:gravity="fill_horizontal"
+        android:padding="15dp"
+        android:textSize="14dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:text="Исходный код программы находится в открытом доступе. Чтобы ознакомиться, пройдите по ссылке ниже."
+        android:padding="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:gravity="fill_horizontal" />
+    <Button
+        android:id="@+id/gitButton"
+        android:layout_alignParentBottom="true"
+        android:text="Ссылка на GitHub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center" />
+</RelativeLayout>
